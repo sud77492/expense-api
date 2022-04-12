@@ -1,8 +1,8 @@
-package com.sudproject.expensetrackerapi.services;
+package com.sudproject.expenseapi.services;
 
-import com.sudproject.expensetrackerapi.domain.User;
-import com.sudproject.expensetrackerapi.exceptions.EtAuthException;
-import com.sudproject.expensetrackerapi.repositories.UserRepository;
+import com.sudproject.expenseapi.domain.User;
+import com.sudproject.expenseapi.exceptions.EtAuthException;
+import com.sudproject.expenseapi.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService{
 
         Integer count = userRepository.getCountByEmail(email);
         if(count > 0)
-            throw new EtAuthException("Email already in user");
+            throw new EtAuthException("Email already in use");
         Integer userId = userRepository.create(firstName, lastName, email, password);
         return userRepository.findById(userId);
     }

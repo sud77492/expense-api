@@ -1,4 +1,4 @@
-package com.sudproject.expensetrackerapi.domain;
+package com.sudproject.expenseapi.domain;
 
 public class User {
     private Integer userId;

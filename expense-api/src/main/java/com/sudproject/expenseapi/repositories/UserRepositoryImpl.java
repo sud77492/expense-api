@@ -1,7 +1,7 @@
-package com.sudproject.expensetrackerapi.repositories;
+package com.sudproject.expenseapi.repositories;
 
-import com.sudproject.expensetrackerapi.domain.User;
-import com.sudproject.expensetrackerapi.exceptions.EtAuthException;
+import com.sudproject.expenseapi.domain.User;
+import com.sudproject.expenseapi.exceptions.EtAuthException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -15,7 +15,7 @@ import java.sql.Statement;
 @Repository
 public class UserRepositoryImpl implements UserRepository {
 
-    private static final String SQL_CREATE = "INSERT INTO ET_USERS(USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD) VALUES(NEXTVAL('ET_USERS_SQL'), ?, ?, ?, ?)";
+    private static final String SQL_CREATE = "INSERT INTO ET_USERS(USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD) VALUES(NEXTVAL('ET_USERS_SEQ'), ?, ?, ?, ?)";
     private static final String SQL_COUNT_BY_EMAIL = "SELECT COUNT(*) FROM ET_USERS WHERE EMAIL = ?";
     private static final String SQL_FIND_BY_ID = "SELECT USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD FROM ET_USERS WHERE USER_ID=?";
 

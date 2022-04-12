@@ -1,7 +1,8 @@
-package com.sudproject.expensetrackerapi.services;
+package com.sudproject.expenseapi.services;
 
-import com.sudproject.expensetrackerapi.domain.User;
-import com.sudproject.expensetrackerapi.exceptions.EtAuthException;
+
+import com.sudproject.expenseapi.domain.User;
+import com.sudproject.expenseapi.exceptions.EtAuthException;
 
 public interface UserService {
 

@@ -1,7 +1,8 @@
-package com.sudproject.expensetrackerapi.repositories;
+package com.sudproject.expenseapi.repositories;
 
-import com.sudproject.expensetrackerapi.domain.User;
-import com.sudproject.expensetrackerapi.exceptions.EtAuthException;
+
+import com.sudproject.expenseapi.domain.User;
+import com.sudproject.expenseapi.exceptions.EtAuthException;
 
 public interface UserRepository {
 

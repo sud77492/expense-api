@@ -1,7 +1,7 @@
-package com.sudproject.expensetrackerapi.resources;
+package com.sudproject.expenseapi.resources;
 
-import com.sudproject.expensetrackerapi.domain.User;
-import com.sudproject.expensetrackerapi.services.UserService;
+import com.sudproject.expenseapi.domain.User;
+import com.sudproject.expenseapi.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
